@@ -1,0 +1,9 @@
+{%extends "base.html"%}
+{%block container%}
+<h1>Registrar nuevo pedido</h1>
+<form action="" method="post">
+	{{form.as_ul}}
+	{% csrf_token %}
+	<input type="submit" value="Enviar">
+</form>
+{%endblock%}
